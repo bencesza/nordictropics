@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#1B4332"/>
+  <path d="M128 40 L216 80 L216 176 L128 216 L40 176 L40 80 Z" fill="#D4AF37"/>
+  <path d="M128 60 L196 90 L196 166 L128 196 L60 166 L60 90 Z" fill="#1B4332"/>
+  <path d="M80 100 L80 156 L92 156 L92 120 L120 156 L132 156 L132 100 L120 100 L120 136 L92 100 Z" fill="#D4AF37"/>
+  <path d="M144 100 L144 112 L160 112 L160 156 L172 156 L172 112 L188 112 L188 100 Z" fill="#D4AF37"/>
+  <polygon points="128,20 40,60 40,80 128,40 216,80 216,60" fill="#D4AF37" opacity="0.5"/>
+  <polygon points="128,236 216,196 216,176 128,216 40,176 40,196" fill="#D4AF37" opacity="0.5"/>
+</svg>
