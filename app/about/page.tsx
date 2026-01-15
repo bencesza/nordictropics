@@ -21,7 +21,7 @@ const team = [
     name: 'Henry',
     role: 'Quality Assurance & EU Logistics',
     location: 'Denmark',
-    image: 'https://cdn.abacus.ai/images/a7a7a1f8-4150-4281-8161-74df0361f7a2.png',
+    image: 'image: '/henry-final-v1.jpg',',
     bio: 'Experienced supply chain and operations professional with a background in FMCG and retail consumer goods while working at one of Denmarks most prominent retail grocist -Dagrofa. Strong experience in logistics coordination, production planning, and ensuring product availability in fast-paced retail environments. Used to working across sales, warehouse, and distribution teams to meet consumer demand efficiently. Structured, reliable, and execution-focused.',
   },
   {
