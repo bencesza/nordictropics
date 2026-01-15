@@ -22,7 +22,7 @@ const team = [
     role: 'Quality Assurance & EU Logistics',
     location: 'Denmark',
     image: 'https://cdn.abacus.ai/images/a7a7a1f8-4150-4281-8161-74df0361f7a2.png',
-    bio: 'With 10 years at Dagrofa as team leader, quality officer, and logistics planner, Henry brings deep expertise in European distribution networks. His meticulous approach to quality control and cold-chain logistics ensures our fruits arrive in perfect condition.',
+    bio: 'Experienced supply chain and operations professional with a background in FMCG and retail consumer goods while working at one of Denmarks most prominent retail grocist -Dagrofa. Strong experience in logistics coordination, production planning, and ensuring product availability in fast-paced retail environments. Used to working across sales, warehouse, and distribution teams to meet consumer demand efficiently. Structured, reliable, and execution-focused.',
   },
   {
     name: 'Rock',
