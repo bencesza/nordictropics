@@ -39,17 +39,17 @@ const benefits = [
 const certifications = [
   {
     name: 'GlobalG.A.P.',
-    image: '/images/a49ac33d-9827-4161-9c13-f789c49f5cab.png',
+    image: 'https://cdn.abacus.ai/images/a49ac33d-9827-4161-9c13-f789c49f5cab.png',
     description: 'Good Agricultural Practices',
   },
   {
     name: 'HACCP',
-    image: '/images/a42cd8e3-7654-4ed3-81d8-1184fcae9817.png',
+    image: 'https://cdn.abacus.ai/images/a42cd8e3-7654-4ed3-81d8-1184fcae9817.png',
     description: 'Food Safety Management',
   },
   {
     name: 'SMETA',
-    image: '/images/f50be4a0-87a1-4f6c-b492-b37a7cf05b1f.png',
+    image: 'https://cdn.abacus.ai/images/f50be4a0-87a1-4f6c-b492-b37a7cf05b1f.png',
     description: 'Ethical Compliance',
   },
 ];
@@ -213,7 +213,7 @@ export default function PartnersPage() {
             <AnimatedSection>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden card-shadow">
                 <Image
-                  src="/images/87c38d33-3c92-4251-aa10-d8247cf02a26.png"
+                  src="https://cdn.abacus.ai/images/87c38d33-3c92-4251-aa10-d8247cf02a26.png"
                   alt="Premium tropical fruits"
                   fill
                   className="object-cover"
@@ -273,13 +273,13 @@ export default function PartnersPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/images/trade"
+                  href="/trade"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary hover:bg-accent hover:text-white font-semibold rounded-md transition-all hover-lift"
                 >
                   Trade With Us
                 </Link>
                 <Link
-                  href="/images/contact"
+                  href="/contact"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-md transition-all hover-lift border border-white/30"
                 >
                   Contact Our Team
