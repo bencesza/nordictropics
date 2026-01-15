@@ -1,40 +1,25 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { prisma } from '@/lib/db';
+import { NextResponse } from 'next/server';
+import prisma from '@/lib/db';
 
-export const dynamic = 'force-dynamic';
-
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
-    const body = await request?.json?.();
-    const { companyName, contactPerson, email, phone, products, message } = body ?? {};
+    const body = await request.json();
+    const { companyName, contactPerson, email, phone, productsInterest, message } = body;
 
-    if (!companyName || !contactPerson || !email || !phone || !products || !message) {
-      return NextResponse.json(
-        { error: 'All fields are required' },
-        { status: 400 }
-      );
-    }
-
-    const submission = await prisma?.partnerInterest?.create?.({
+    const submission = await prisma.partnerInterest.create({
       data: {
-        companyName: companyName ?? '',
-        contactPerson: contactPerson ?? '',
-        email: email ?? '',
-        phone: phone ?? '',
-        products: products ?? '[]',
-        message: message ?? '',
+        companyName,
+        contactPerson,
+        email,
+        phone,
+        productsInterest,
+        message,
       },
     });
 
-    return NextResponse.json(
-      { success: true, id: submission?.id },
-      { status: 201 }
-    );
+    return NextResponse.json({ success: true, data: submission });
   } catch (error) {
-    console.error('Error creating partner interest:', error);
-    return NextResponse.json(
-      { error: 'Failed to submit partnership inquiry' },
-      { status: 500 }
-    );
+    console.error('Partner API Error:', error);
+    return NextResponse.json({ success: false, error: 'Failed to submit' }, { status: 500 });
   }
 }

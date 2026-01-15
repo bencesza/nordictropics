@@ -1,38 +1,18 @@
-import { NextRequest, NextResponse } from 'next/server';
-import { prisma } from '@/lib/db';
+import { NextResponse } from 'next/server';
+import prisma from '@/lib/db';
 
-export const dynamic = 'force-dynamic';
-
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
-    const body = await request?.json?.();
-    const { name, email, company, message } = body ?? {};
+    const body = await request.json();
+    const { name, email, company, message } = body;
 
-    if (!name || !email || !message) {
-      return NextResponse.json(
-        { error: 'Name, email, and message are required' },
-        { status: 400 }
-      );
-    }
-
-    const submission = await prisma?.contactSubmission?.create?.({
-      data: {
-        name: name ?? '',
-        email: email ?? '',
-        company: company ?? null,
-        message: message ?? '',
-      },
+    const submission = await prisma.contactSubmission.create({
+      data: { name, email, company, message },
     });
 
-    return NextResponse.json(
-      { success: true, id: submission?.id },
-      { status: 201 }
-    );
+    return NextResponse.json({ success: true, data: submission });
   } catch (error) {
-    console.error('Error creating contact submission:', error);
-    return NextResponse.json(
-      { error: 'Failed to submit contact form' },
-      { status: 500 }
-    );
+    console.error('Contact API Error:', error);
+    return NextResponse.json({ success: false, error: 'Failed to submit' }, { status: 500 });
   }
 }
