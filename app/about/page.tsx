@@ -21,7 +21,7 @@ const team = [
     name: 'Henry',
     role: 'Quality Assurance & EU Logistics',
     location: 'Denmark',
-    image: 'image: '/henry-final-v1.jpg',',
+    image: '/henry-final-v1.jpg',
     bio: 'Experienced supply chain and operations professional with a background in FMCG and retail consumer goods while working at one of Denmarks most prominent retail grocist -Dagrofa. Strong experience in logistics coordination, production planning, and ensuring product availability in fast-paced retail environments. Used to working across sales, warehouse, and distribution teams to meet consumer demand efficiently. Structured, reliable, and execution-focused.',
   },
   {
