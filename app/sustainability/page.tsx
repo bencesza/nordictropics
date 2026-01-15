@@ -45,17 +45,17 @@ const certifications = [
   {
     name: 'GlobalG.A.P.',
     description: 'Ensures good agricultural practices, food safety, worker welfare, and environmental protection',
-    image: 'https://cdn.abacus.ai/images/a49ac33d-9827-4161-9c13-f789c49f5cab.png',
+    image: '/images/a49ac33d-9827-4161-9c13-f789c49f5cab.png',
   },
   {
     name: 'HACCP',
     description: 'Hazard Analysis Critical Control Points for food safety throughout the supply chain',
-    image: 'https://cdn.abacus.ai/images/a42cd8e3-7654-4ed3-81d8-1184fcae9817.png',
+    image: '/images/a42cd8e3-7654-4ed3-81d8-1184fcae9817.png',
   },
   {
     name: 'SMETA/GRASP',
     description: 'Social compliance and responsible agricultural practices protecting workers and communities',
-    image: 'https://cdn.abacus.ai/images/f50be4a0-87a1-4f6c-b492-b37a7cf05b1f.png',
+    image: '/images/f50be4a0-87a1-4f6c-b492-b37a7cf05b1f.png',
   },
 ];
 
@@ -156,7 +156,7 @@ export default function SustainabilityPage() {
             <AnimatedSection delay={0.2}>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden card-shadow">
                 <Image
-                  src="https://cdn.abacus.ai/images/79b178d4-1b08-475a-8c66-b24bf6969ddb.png"
+                  src="/images/79b178d4-1b08-475a-8c66-b24bf6969ddb.png"
                   alt="Kenyan farm operations"
                   fill
                   className="object-cover"
@@ -205,7 +205,7 @@ export default function SustainabilityPage() {
             <AnimatedSection>
               <div className="relative aspect-video rounded-lg overflow-hidden card-shadow">
                 <Image
-                  src="https://cdn.abacus.ai/images/7917aabb-1d0c-42e0-87af-d3cb976ea9b3.png"
+                  src="/images/7917aabb-1d0c-42e0-87af-d3cb976ea9b3.png"
                   alt="Cold chain logistics"
                   fill
                   className="object-cover"

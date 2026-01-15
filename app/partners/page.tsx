@@ -39,17 +39,17 @@ const benefits = [
 const certifications = [
   {
     name: 'GlobalG.A.P.',
-    image: 'https://cdn.abacus.ai/images/a49ac33d-9827-4161-9c13-f789c49f5cab.png',
+    image: '/images/a49ac33d-9827-4161-9c13-f789c49f5cab.png',
     description: 'Good Agricultural Practices',
   },
   {
     name: 'HACCP',
-    image: 'https://cdn.abacus.ai/images/a42cd8e3-7654-4ed3-81d8-1184fcae9817.png',
+    image: '/images/a42cd8e3-7654-4ed3-81d8-1184fcae9817.png',
     description: 'Food Safety Management',
   },
   {
     name: 'SMETA',
-    image: 'https://cdn.abacus.ai/images/f50be4a0-87a1-4f6c-b492-b37a7cf05b1f.png',
+    image: '/images/f50be4a0-87a1-4f6c-b492-b37a7cf05b1f.png',
     description: 'Ethical Compliance',
   },
 ];
@@ -213,7 +213,7 @@ export default function PartnersPage() {
             <AnimatedSection>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden card-shadow">
                 <Image
-                  src="https://cdn.abacus.ai/images/87c38d33-3c92-4251-aa10-d8247cf02a26.png"
+                  src="/images/87c38d33-3c92-4251-aa10-d8247cf02a26.png"
                   alt="Premium tropical fruits"
                   fill
                   className="object-cover"

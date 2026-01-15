@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function HomePage() {
   const products = [
-    { name: 'Kent Mango', image: '/images/mango-kent.jpg', description: 'Sweet, fiberless, and aromatic.' },
-    { name: 'Hass Avocado', image: '/images/avocado-hass.jpg', description: 'Creamy texture and rich flavor.' },
-    { name: 'MD2 Pineapple', image: '/images/pineapple-md2.jpg', description: 'Extra sweet and golden.' },
-    { name: 'Passionfruit', image: '/images/passionfruit-purple.jpg', description: 'Intense tropical aroma.' }
+    { name: 'Kent Mango', image: '/images/images/mango-kent.jpg', description: 'Sweet, fiberless, and aromatic.' },
+    { name: 'Hass Avocado', image: '/images/images/avocado-hass.jpg', description: 'Creamy texture and rich flavor.' },
+    { name: 'MD2 Pineapple', image: '/images/images/pineapple-md2.jpg', description: 'Extra sweet and golden.' },
+    { name: 'Passionfruit', image: '/images/images/passionfruit-purple.jpg', description: 'Intense tropical aroma.' }
   ];
 
   return (
@@ -16,7 +16,7 @@ export default function HomePage() {
         <div 
           className="absolute inset-0 z-0"
           style={{ 
-            backgroundImage: "url('/images/hero-kenyan-farm.jpg')",
+            backgroundImage: "url('/images/images/hero-kenyan-farm.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
