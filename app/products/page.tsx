@@ -2,30 +2,10 @@ import React from 'react';
 
 export default function ProductsPage() {
   const products = [
-    {
-      name: 'Kent Mango',
-      image: '/images/mango-kent.jpg',
-      origin: 'Kenya',
-      availability: 'November - March'
-    },
-    {
-      name: 'Hass Avocado',
-      image: '/images/avocado-hass.jpg',
-      origin: 'Kenya',
-      availability: 'Year-round'
-    },
-    {
-      name: 'MD2 Pineapple',
-      image: '/images/pineapple-md2.jpg',
-      origin: 'Kenya',
-      availability: 'Year-round'
-    },
-    {
-      name: 'Passionfruit',
-      image: '/images/passionfruit-purple.jpg',
-      origin: 'Kenya',
-      availability: 'Seasonal'
-    }
+    { name: 'Kent Mango', image: '/images/mango-kent.jpg', origin: 'Kenya', availability: 'November - March' },
+    { name: 'Hass Avocado', image: '/images/avocado-hass.jpg', origin: 'Kenya', availability: 'Year-round' },
+    { name: 'MD2 Pineapple', image: '/images/pineapple-md2.jpg', origin: 'Kenya', availability: 'Year-round' },
+    { name: 'Passionfruit', image: '/images/passionfruit-purple.jpg', origin: 'Kenya', availability: 'Seasonal' }
   ];
 
   return (
@@ -34,8 +14,8 @@ export default function ProductsPage() {
         <h1 className="text-4xl font-bold text-center mb-16">Our Products</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {products.map((product) => (
-            <div key={product.name} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-80">
+            <div key={product.name} className="bg-white rounded-2xl overflow-hidden shadow-sm">
+              <div className="h-80 bg-gray-200">
                 <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
               </div>
               <div className="p-8">
