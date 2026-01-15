@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
-import prisma from '@/lib/db';
 
 export async function POST(request: Request) {
+  const { PrismaClient } = await import('@prisma/client');
+  const prisma = new PrismaClient();
+
   try {
     const body = await request.json();
     const { companyName, contactPerson, email, phone, productsInterest, message } = body;
@@ -21,5 +23,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('Partner API Error:', error);
     return NextResponse.json({ success: false, error: 'Failed to submit' }, { status: 500 });
+  } finally {
+    await prisma.$disconnect();
   }
 }
