@@ -6,7 +6,7 @@ const products = [
   {
     name: 'Premium Mango',
     varieties: 'Kent & Tommy Atkins',
-    image: '/images/mango-kent.jpg',
+    image: '/images/images/images/images/images/mango-kent.jpg',
     description: 'Our mangoes are hand-selected from certified Kenyan orchards, sun-ripened to perfection. Kent mangoes offer exceptional sweetness with minimal fiber, while Tommy Atkins provides vibrant color and excellent shelf life.',
     specs: [
       'Varieties: Kent, Tommy Atkins',
@@ -44,7 +44,7 @@ const products = [
   {
     name: 'MD2 Pineapple',
     varieties: 'Golden Sweet',
-    image: '/images/pineapple-md2.jpg',
+    image: '/images/images/images/images/images/pineapple-md2.jpg',
     description: 'The MD2 variety, also known as Super Sweet, delivers exceptional sweetness with low acidity. Perfect for retail and HoReCa applications, our pineapples maintain quality throughout transportation.',
     specs: [
       'Variety: MD2 (Super Sweet)',
@@ -224,13 +224,13 @@ export default function ProductsPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="/images/trade"
+                  href="/images/images/images/trade"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary hover:bg-accent hover:text-white font-semibold rounded-md transition-all hover-lift"
                 >
                   Trade With Us
                 </a>
                 <a
-                  href="/images/contact"
+                  href="/images/images/images/contact"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-md transition-all hover-lift border border-white/30"
                 >
                   Contact Sales
