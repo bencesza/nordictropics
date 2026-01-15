@@ -179,7 +179,7 @@ export default function AboutPage() {
                 Whether you're a retailer, importer, or foodservice buyer, we invite you to be part of a supply chain that values quality, transparency, and positive impact.
               </p>
               <a
-                href="/trade"
+                href="/images/trade"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary hover:bg-accent hover:text-white font-semibold rounded-md transition-all hover-lift"
               >
                 Start Trading With Us

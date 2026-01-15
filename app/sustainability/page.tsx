@@ -261,7 +261,7 @@ export default function SustainabilityPage() {
                 We're on a journey toward Organic (EU) and FairTrade certifications, further solidifying our commitment to environmental stewardship and social responsibility.
               </p>
               <a
-                href="/partners"
+                href="/images/partners"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary hover:bg-accent hover:text-white font-semibold rounded-md transition-all hover-lift"
               >
                 Partner With Us
