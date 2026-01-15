@@ -8,7 +8,7 @@ const products = [
   {
     name: 'Premium Mango',
     varieties: 'Kent & Tommy Atkins',
-    image: '/images/images/mango-kent.jpg',
+    image: '/images/images/images/mango-kent.jpg',
     description: 'Sun-ripened perfection from Kenyan orchards',
   },
   {
@@ -20,7 +20,7 @@ const products = [
   {
     name: 'MD2 Pineapple',
     varieties: 'Golden Sweet',
-    image: '/images/images/pineapple-md2.jpg',
+    image: '/images/images/images/pineapple-md2.jpg',
     description: 'Tropical sweetness in every slice',
   },
   {
@@ -98,14 +98,14 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/images/trade"
+                  href="/images/images/trade"
                   className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md transition-all hover-lift group"
                 >
                   Trade With Us
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link
-                  href="/images/products"
+                  href="/images/images/products"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-md transition-all hover-lift border border-white/30"
                 >
                   View Products
@@ -163,7 +163,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {products?.map((product, index) => (
               <AnimatedSection key={product?.name} delay={index * 0.1}>
-                <Link href="/images/products" className="group block">
+                <Link href="/images/images/products" className="group block">
                   <div className="bg-white rounded-lg overflow-hidden card-shadow hover-lift">
                     <div className="relative aspect-square bg-muted">
                       <Image
@@ -189,7 +189,7 @@ export default function HomePage() {
           <AnimatedSection>
             <div className="text-center">
               <Link
-                href="/images/products"
+                href="/images/images/products"
                 className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md transition-all hover-lift"
               >
                 Explore All Products
@@ -276,14 +276,14 @@ export default function HomePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/images/trade"
+                  href="/images/images/trade"
                   className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md transition-all hover-lift"
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <Link
-                  href="/images/contact"
+                  href="/images/images/contact"
                   className="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-muted text-foreground font-semibold rounded-md transition-all hover-lift border border-border"
                 >
                   Contact Us
