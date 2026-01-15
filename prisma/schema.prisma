@@ -1,13 +1,11 @@
 generator client {
-    provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "rhel-openssl-3.0.x"]
-    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
-    output = "/home/ubuntu/nordictropics/nextjs_space/node_modules/.prisma/client"
 }
 
 datasource db {
-    provider = "postgresql"
-    url      = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model ContactSubmission {
@@ -15,21 +13,17 @@ model ContactSubmission {
   name      String
   email     String
   company   String?
-  message   String   @db.Text
+  message   String
   createdAt DateTime @default(now())
-  
-  @@map("contact_submissions")
 }
 
 model PartnerInterest {
-  id            String   @id @default(cuid())
-  companyName   String
-  contactPerson String
-  email         String
-  phone         String
-  products      String   @db.Text
-  message       String   @db.Text
-  createdAt     DateTime @default(now())
-  
-  @@map("partner_interests")
+  id               String   @id @default(cuid())
+  companyName      String
+  contactPerson    String
+  email            String
+  phone            String
+  productsInterest String
+  message          String
+  createdAt        DateTime @default(now())
 }
