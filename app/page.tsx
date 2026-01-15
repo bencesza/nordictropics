@@ -8,7 +8,7 @@ const products = [
   {
     name: 'Premium Mango',
     varieties: 'Kent & Tommy Atkins',
-    image: '/mango-kent.jpg',
+    image: '/images/mango-kent.jpg',
     description: 'Sun-ripened perfection from Kenyan orchards',
   },
   {
@@ -20,7 +20,7 @@ const products = [
   {
     name: 'MD2 Pineapple',
     varieties: 'Golden Sweet',
-    image: '/pineapple-md2.jpg',
+    image: '/images/pineapple-md2.jpg',
     description: 'Tropical sweetness in every slice',
   },
   {
