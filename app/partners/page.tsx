@@ -103,7 +103,7 @@ export default function PartnersPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits?.map((benefit, index) => {
-              const Icon = benefit.icon; // extract to a proper JSX identifier
+              const Icon = benefit.icon;
               return (
                 <AnimatedSection key={benefit?.title} delay={index * 0.1}>
                   <div className="group h-full p-8 bg-gradient-to-br from-white to-muted/20 rounded-lg card-shadow hover-lift border border-border">
@@ -241,7 +241,7 @@ export default function PartnersPage() {
                   </li>
                 </ul>
                 <p className="text-muted-foreground italic">
-                  Our team's experience at Dagrofa means we understand Nordic distribution requirements inside and out.
+                  Our team's experience means we understand Nordic distribution requirements inside and out.
                 </p>
               </div>
             </AnimatedSection>
