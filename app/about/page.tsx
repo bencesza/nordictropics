@@ -84,7 +84,7 @@ export default function AboutPage() {
               </h2>
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="text-lg leading-relaxed mb-4">
-                  The idea for Nordic Tropics was born when <strong className="text-primary">Bernard</strong>, a successful telecommunications entrepreneur in Kenya with a deep passion for fruit growing, connected with <strong className="text-primary">Bence</strong> and <strong className="text-primary">Henry</strong>—both experienced professionals from Dagrofa with intimate knowledge of the Danish fruit market.
+                  The idea for Nordic Tropics was born when <strong className="text-primary">Bernard</strong>, a successful telecommunications entrepreneur in Kenya with a deep passion for fruit growing, connected with <strong className="text-primary">Bence</strong> and <strong className="text-primary">Henry</strong>—both experienced professionals with intimate knowledge of the Danish fruit market.
                 </p>
                 <p className="text-lg leading-relaxed mb-4">
                   Together, they identified a significant gap: Denmark and Northern Europe were missing out on the exceptional quality of Kenyan tropical fruits like mango, avocado, pineapple, and passionfruit. Research revealed these fruits are among the most nutrition-rich superfoods available, yet they were underrepresented in Nordic markets.
